@@ -1,0 +1,45 @@
+run app
+
+
+signing repost:
+86:70:59:B7:86:2C:2C:03:31:28:92:87:F1:3D:AF:E7:39:BC:F8:2E
+
+Release:
+B1:1C:FB:02:B7:86:D7:E6:F2:66:FB:BC:18:64:13:A6:5E:41:41:1B
+
+
+
+keytool -list -v -keystore D:\AndroidStudioWS\RunningApp\app\keystore -alias RunningApp
+
+
+C:\Program Files\Java\jdk-15.0.2\bin>keytool -list -v -keystore D:\AndroidStudioWS\RunningApp\app\keystore\keystore.jks -alias RunningApp
+Enter keystore password:
+Alias name: RunningApp
+Creation date: 04-May-2021
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Mohd Asad
+Issuer: CN=Mohd Asad
+Serial number: 15133def
+Valid from: Tue May 04 23:20:18 IST 2021 until: Sat Apr 28 23:20:18 IST 2046
+Certificate fingerprints:
+         SHA1: B1:1C:FB:02:B7:86:D7:E6:F2:66:FB:BC:18:64:13:A6:5E:41:41:1B
+         SHA256: C2:E4:13:2C:4A:E3:D2:3F:C2:F5:91:EC:E2:ED:51:88:BC:53:E3:BE:10:74:01:24:23:66:32:F8:84:2F:73:50
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: EB B1 59 C0 A7 5B 51 58   ED C4 DB 3A BF 62 FF 16  ..Y..[QX...:.b..
+0010: 0C 8C 76 63                                        ..vc
+]
+]
+
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore D:\AndroidStudioWS\RunningApp\app\keystore\keystore.jks -destkeystore D:\AndroidStudioWS\RunningApp\app\keystore\keystore.jks -deststoretype pkcs12".
